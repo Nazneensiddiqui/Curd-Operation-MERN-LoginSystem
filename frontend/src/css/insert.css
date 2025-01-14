@@ -1,0 +1,74 @@
+.form-container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #f7e8c1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #6b4b3a;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #6b4b3a;
+  }
+  
+  input[type='text'], input[type='number'], input[type='tel'], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+  }
+  
+  .name-fields {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .name-fields input {
+    flex: 1;
+  }
+  
+  .address-fields {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6b4b3a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #5a3d30;
+  }
+  
+  @media (max-width: 600px) {
+    .name-fields, .address-fields {
+      flex-direction: column;
+    }
+  }
