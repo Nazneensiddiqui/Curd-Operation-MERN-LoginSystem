@@ -37,10 +37,7 @@ navigate("/home")
     return(
         <>
 
-<div
-      className="modal show"
-      style={{ display: 'block', position: 'initial' }}
-    >
+<div className="modal show"  style={{ display: 'block', position: 'initial' }} >
       <Modal.Dialog >
         <Modal.Header closeButton style={{backgroundColor:" #f7e8c1"}}>
           <Modal.Title align="center" style={{ color:"#6b4b3a",backgroundColor:" #f7e8c1"}}>Reset Password</Modal.Title>

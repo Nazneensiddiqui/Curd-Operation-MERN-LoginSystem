@@ -43,6 +43,7 @@ else{
     }
 }
 
+//...............................reset password,,..........................
 const changePassword=async(req , res)=>{
 const{  userid,oldpassword,newpassword}=req.body;
     try {

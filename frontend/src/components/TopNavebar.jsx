@@ -26,7 +26,7 @@ const Topnavbar=()=>{
         <Container>
           <Navbar.Brand href="#home" style={{marginLeft:"300px"}}><img src={logo}/></Navbar.Brand>
           <Nav className="me-auto" >
-            <Nav.Link as={Link} to="home">Home</Nav.Link>
+            <Nav.Link as={Link} to="home">Login</Nav.Link>
             <Nav.Link as={Link} to="ragestration">Registration</Nav.Link>
             <Form className="d-flex" style={{marginLeft:"30px"}}>
             <Form.Control
