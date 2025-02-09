@@ -15,7 +15,7 @@ const Insert=()=>{
       setInput(values=>({...values , [name]:value}))
   }
   const handleSubmit=()=>{
-      let api = "http://localhost:9000/books/datasave"
+      let api = "https://curd-operation-mern-loginsystem-3.onrender.com/books/datasave"
      axios.post(api, input).then((res)=>{
       console.log(res.data);
     

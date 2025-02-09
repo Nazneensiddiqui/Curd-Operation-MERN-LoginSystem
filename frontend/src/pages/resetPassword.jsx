@@ -23,7 +23,7 @@ const handleInput=(e)=>{
 }
 
 const handleSubmit=async()=>{
-  let api="http://localhost:9000/users/resetpass";
+  let api="https://curd-operation-mern-loginsystem-3.onrender.com/users/resetpass";
 
 try {
   const res= await axios.post(api , {userid:userid, ...input})

@@ -12,7 +12,7 @@ const[input,setInput]=useState({});
 const Navigate=useNavigate();
 
 const loadData=()=>{
-       let api = "http://localhost:9000/books/editdatadisplay";
+       let api = "https://curd-operation-mern-loginsystem-3.onrender.com/books/editdatadisplay";
        axios.post(api , {id:id}).then((res)=>{
        setInput(res.data)
        })
@@ -28,7 +28,7 @@ const handleInput=(e)=>{
     setInput(values=>({...values , [name]:value}))
 }
 const handleSubmit=()=>{
-    let api = "http://localhost:9000/books/editdatasave"
+    let api = "https://curd-operation-mern-loginsystem-3.onrender.com/books/editdatasave"
    axios.post(api, input).then((res)=>{
     console.log(res.data);
     alert("Data Successfully Update")

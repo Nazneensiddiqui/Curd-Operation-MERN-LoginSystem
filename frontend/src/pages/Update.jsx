@@ -13,7 +13,7 @@ const navigate=useNavigate();
 
   //update data
   const loadData=()=>{
-     let api = "http://localhost:9000/books/dataupdate";
+     let api = "https://curd-operation-mern-loginsystem-3.onrender.com/books/dataupdate";
      axios.get(api).then((res)=>{
       setMyData(res.data)
      })
