@@ -1,5 +1,5 @@
 const userModel=require("../Models/userModel")
-const bcrypt=require("bcrypt")
+const bcrypt=require("bcryptjs")
 
 //....Ragestation.....................
 const DataSave=async(req , res)=>{
@@ -7,8 +7,8 @@ const DataSave=async(req , res)=>{
 const{name,city,email,password}=req.body
 
 //bcrypt google se lana he
-const salt = await bcrypt.genSalt();
-const passwordHash = await bcrypt.hash(password, salt);
+
+const passwordHash = await bcrypt.hash(password, 8);
 
 const mydata= await userModel.create({
     name:name, 
@@ -52,8 +52,8 @@ const{  userid,oldpassword,newpassword}=req.body;
         if(checkpass)
         {
            // bcrypt google se lana he
-               const salt = await bcrypt.genSalt();
-              const passwordHash = await bcrypt.hash(newpassword, salt);
+              
+              const passwordHash = await bcrypt.hash(newpassword, 8);
             await userModel.findByIdAndUpdate(userid , {password:passwordHash})
             res.status(200).send({msg:"password Update"})
         }
