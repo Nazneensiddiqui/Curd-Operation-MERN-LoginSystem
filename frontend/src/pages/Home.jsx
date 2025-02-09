@@ -25,6 +25,7 @@ const Home=()=>{
          localStorage.setItem("userid" , response.data._id)
         
         console.log(response.data);
+        message.success(response.data.msg)
           navigate("/dashborad")
         }
     } catch (error) {

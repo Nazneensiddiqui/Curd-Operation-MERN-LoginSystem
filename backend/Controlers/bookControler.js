@@ -59,6 +59,7 @@ const EditDataDisplay=async(req , res)=>{
  }
 
 const DataSearch=async(req , res)=>{
+    //console.log(req.body)
    const{input}=req.body;
    const mydata= await BookModel.find({"cfname" : {$regex:input , $options: "i"}});
    res.send(mydata)
