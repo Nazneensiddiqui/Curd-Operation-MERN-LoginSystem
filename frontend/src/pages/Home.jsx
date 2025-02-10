@@ -129,8 +129,9 @@ const Home = () => {
     padding: "30px",
     borderRadius: "20px",
     width: "90%",
-    maxWidth: "400px",
+     maxWidth: "400px",
     boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+    marginBottom:"100px"
   };
 
   return (

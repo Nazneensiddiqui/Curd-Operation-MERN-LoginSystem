@@ -184,10 +184,10 @@ const Update = () => {
         <td>{key.pincode}</td>
         <td>{key.phone}</td>
         <td>
-          <button onClick={() => editData(key._id)} style={actionButtonStyle}>
+          <button onClick={() => editData(key._id)} >
             <img src={edit} width={20} height={20} alt="Edit" />
           </button>
-          <button onClick={() => delData(key._id)} style={actionButtonStyle}>
+          <button onClick={() => delData(key._id)} >
             <img src={del} width={20} height={20} alt="Delete" />
           </button>
         </td>

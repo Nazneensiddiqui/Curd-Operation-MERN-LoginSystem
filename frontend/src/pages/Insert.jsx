@@ -168,7 +168,7 @@ const Insert = () => {
 
   return (
     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100 bg-light" style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover", backgroundPosition: "center" }}>
-      <div className="card p-4 shadow-lg w-100" style={{ maxWidth: "500px", backgroundColor: "rgba(255, 255, 255, 0.9)" }}>
+      <div className="card p-4 shadow-lg w-100" style={{ maxWidth: "500px", backgroundColor: " #f7e8c1" }}>
         <h4 className="text-center text-primary mb-4">Library Membership Form</h4>
         <form className="needs-validation" onSubmit={handleSubmit} noValidate>
           <div className="mb-3">

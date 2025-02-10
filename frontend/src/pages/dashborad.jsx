@@ -143,9 +143,9 @@ const Dashboard = () => {
       <Container fluid className="mt-5">
         <Row>
           {/* Sidebar */}
-          <Col lg={2} md={3} sm={4} className="sidebar bg-light p-3">
+          <Col  md={2}  className="sidebar">
             <Nav defaultActiveKey="/" className="flex-column">
-              <Nav.Link as={Link} to="/dashboard"><GrDashboard /> Dashboard</Nav.Link>
+              <Nav.Link as={Link} to="#"><GrDashboard /> Dashboard</Nav.Link>
               <Nav.Link as={Link} to="insert"><ImInsertTemplate /> Insert</Nav.Link>
               <Nav.Link as={Link} to="display"><BsPcDisplayHorizontal /> Display</Nav.Link>
               <Nav.Link as={Link} to="update"><GrDocumentUpdate /> Update</Nav.Link>

@@ -85,6 +85,7 @@ import Form from "react-bootstrap/Form";
 import axios from "axios";
 import bg from "../images/bg.jpg";
 
+
 const Ragestration = () => {
   const [input, setInput] = useState({});
 
@@ -126,7 +127,7 @@ const Ragestration = () => {
     width: "90%",
     maxWidth: "400px",
     boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-  };
+  }
 
   return (
     <>
