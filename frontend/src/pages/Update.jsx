@@ -13,7 +13,7 @@ const navigate=useNavigate();
 
   //update data
   const loadData=()=>{
-     let api = "https://curd-operation-mern-loginsystem-3.onrender.com/books/dataupdate";
+     let api = "https://curd-operation-mern-loginsystem-5.onrender.com/books/dataupdate";
      axios.get(api).then((res)=>{
       setMyData(res.data)
      })
@@ -25,7 +25,7 @@ const navigate=useNavigate();
 
   //delete data function
 const delData=(id)=>{
-  let api = "http://localhost:9000/books/datadelete";
+  let api = "https://curd-operation-mern-loginsystem-5.onrender.com/books/datadelete";
       axios.post(api , {id:id}).then((res)=>{
   console.log(res.data);
   loadData()

@@ -7,7 +7,7 @@ const Display=()=>{
   const[myData , setMyData]=useState([]);
 
   const loadData=()=>{
-     let api = "https://curd-operation-mern-loginsystem-3.onrender.com/books/datadisplay";
+     let api = "https://curd-operation-mern-loginsystem-5.onrender.com/books/datadisplay";
      axios.get(api).then((res)=>{
       console.log(res.data)
       setMyData(res.data)

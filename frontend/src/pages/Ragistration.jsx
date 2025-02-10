@@ -16,7 +16,7 @@ const Ragestration=()=>{
 }
 
 const handleSubmit=()=>{
-   let api="https://curd-operation-mern-loginsystem-3.onrender.com/users/ragestation";
+   let api="https://curd-operation-mern-loginsystem-5.onrender.com/users/ragestation";
   axios.post(api , input).then((res)=>{
    alert("Data Ragestered Succesfuly")
    console.log(res.data)
