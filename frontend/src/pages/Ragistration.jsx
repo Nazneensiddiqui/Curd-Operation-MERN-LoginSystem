@@ -84,11 +84,14 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import axios from "axios";
 import bg from "../images/bg.jpg";
+import {message} from "antd"
+import { useNavigate } from "react-router";
 
 
 const Ragestration = () => {
   const [input, setInput] = useState({});
-
+const navigate=useNavigate()
+   
   const handleInput = (e) => {
     let name = e.target.name;
     let value = e.target.value;
@@ -99,7 +102,8 @@ const Ragestration = () => {
   const handleSubmit = () => {
     let api = "https://curd-operation-mern-loginsystem-5.onrender.com/users/ragestation";
     axios.post(api, input).then((res) => {
-      alert("Data Registered Successfully");
+     message.success ("Data Registered Successfully");
+     navigate("/home")
       console.log(res.data);
       setInput({});
     });
