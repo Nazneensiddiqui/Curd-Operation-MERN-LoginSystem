@@ -163,7 +163,7 @@ const Dashboard = () => {
               </p>
 
               {/* Scrollable Content */}
-              <div className="scrollable-content">
+              <div className="scrollable-content" style={{margin:"20px"}}>
                 <Outlet />
               </div>
 
