@@ -26,7 +26,7 @@ const App=()=>{
  
   </Route>
   <Route path="dashborad" element={<Dashborad/>}>
-  <Route path="admin" element={<Admin/>}/>
+  <Route index element={<Admin/>}/>
   <Route path="insert" element={<Insert/>}/>
   <Route path="display" element={<Display/>}/>
   <Route path="update" element={<Update/>}/>
